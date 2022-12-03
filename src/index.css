@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* music animation */
+.music-icon .span {
+    animation: bounce 2.2s ease infinite alternate
+}
+.music-icon .span:nth-of-type(2) {
+    animation-delay: -2.2s
+}
+.music-icon .span:nth-of-type(3) {
+    animation-delay: -3.7s
+}
+.music-icon .span:nth-of-type(4) {
+  animation-delay: -2.7s
+}
+.music-icon .span:nth-of-type(5) {
+  animation-delay: -3.1s
+}
+.music-icon .span:nth-of-type(6) {
+  animation-delay: -5.7s
+}
+.music-icon .span:nth-of-type(7) {
+  animation-delay: -1.7s
+}
+@keyframes bounce {
+    10% {
+      transform: scaleY(0.3)
+    }
+  
+    30% {
+      transform: scaleY(1)
+    }
+  
+    60% {
+      transform: scaleY(0.5)
+    }
+  
+    80% {
+      transform: scaleY(0.75)
+    }
+  
+    100% {
+      transform: scaleY(0.6)
+    }
+  }
+  
