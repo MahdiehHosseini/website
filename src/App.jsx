@@ -21,9 +21,10 @@ function App() {
   }
   return (
     <div className={`font-${lang === 'EN' ? 'convergence' : 'vazir text-right'} ${viablity && 'overflow-hidden'} h-screen relative flex flex-col bg-${them.mainBgColor} text-${them.mainTxtColor}`}>
-      <Suspense fallback={<></>}>
+      <Suspense fallback={<>Somthing went wrong!</>}>
         <BrowserRouter>
           <Navbar navVisablity={navVisablity} />
+
           <Routes>
             <Route path='/' element={<HomePage />} />
             <Route path='/aboutme' element={<AboutMe />} />

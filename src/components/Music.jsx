@@ -22,7 +22,7 @@ function Music(){
                 <span className={`bg-${them.mainTxtColor} block w-1 rounded-t-xl duration-700 h-8 span origin-bottom mx-0.5`}></span>
                 <span className={`bg-${them.mainTxtColor} block w-1 rounded-t-xl duration-700 h-8 span origin-bottom`}></span>
             </div>
-            <audio ref={audio} autoplay>
+            <audio ref={audio} autoPlay>
                 <source src={music} type="audio/mpeg" />
             </audio>
         </>

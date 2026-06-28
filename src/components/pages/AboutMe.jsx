@@ -1,4 +1,5 @@
 //import pakages
+import { FaMapMarkerAlt } from 'react-icons/fa'
 import { useSelector } from 'react-redux'
 
 function AboutMe(){
@@ -12,7 +13,7 @@ function AboutMe(){
             <div className={`ml-5 animate__animated animate__fadeInLeft animate__slow my-16 md:ml-20 ${lang === 'FA' && 'animate__fadeInRight float-right mr-7 md:mr-20 xl:mr-32'}`}>
                 <h1 className="text-xl md:text-2xl">{lang === 'EN' ? 'Alireza Ganji' : 'علیرضا گنجی'}</h1>
                <span className={`flex items-center text-${them.subTxtColor} md:text-xl text-lg mt-1`}>
-                    <i className={`fa fa-map-marker-alt mr-2 ${lang === 'FA' && 'order-1 mr-0 ml-2'}`}></i>
+                    <FaMapMarkerAlt className={`mr-2 ${lang === 'FA' && 'order-1 mr-0 ml-2'}`} />
                     <p>{lang === 'EN' ? 'Esfehan , Iran' : 'اصفهان ، ایران'}</p>
                </span>
             </div>
