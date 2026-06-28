@@ -22,11 +22,11 @@ function Contact(){
             <footer className="flex flex-col items-center lg:flex-row lg:justify-around lg:mx-32 lg:mt-10 mb-5 animate__animated animate__fadeIn animate__delay-2s animate__slow">
                 <a href="https://wa.me/989130934801" className="flex cursor-pointer flex-col items-center my-10">
                     <FaWhatsapp className=" text-3xl" />
-                    <p className="text-xl mt-4">+98 9130934801</p>
+                    <p className="text-xl mt-4">+98 9000987801</p>
                 </a>
                 <a href="https://t.me/agan_developer" className="flex flex-col items-center cursor-pointer">
                     <FaTelegram className=" text-3xl" /> 
-                    <p className="text-xl mt-4">@agan_developer</p>
+                    <p className="text-xl mt-4">@agent_developer</p>
                 </a>
             </footer>
         </div>

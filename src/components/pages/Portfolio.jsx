@@ -24,7 +24,7 @@ function Portfolio({data}){
     return(
         <div className='h-full md:mr-36 lg:mr-48 overflow-x-hidden'>
             <span className="flex justify-center mt-10">
-                <h3 className={`text-4xl border-b animate__animated animate__fadeInDown animate__slow border-${them.mainTxtColor} p-3`}>{lang === 'EN' ? 'Portfolio' : 'نمونه کارها'}</h3>
+                <h3 className={`text-4xl border-b animate__animated animate__fadeInDown animate__slow border-${them.mainTxtColor} p-3`}>{lang === 'EN' ? 'Sample works' : 'نمونه کارها'}</h3>
             </span>
             <div className="mx-16 lg:mx-10 flex flex-col items-center">
                 {content}

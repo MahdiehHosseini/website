@@ -7,7 +7,7 @@ function SKills({data}){
     const content = []
     for(let i = 0 ; Math.ceil(data.length / 2) > i ; i++){
         const number = data.indexOf(data[2*i])
-        content.push(<div className={`w-full items-center flex flex-col md:flex-row md:mx-10 ${ Math.ceil(data.length / 2) % 2 === 0 ? 'lg:absolute lg:flex-col lg:top-80 lg:mt-12' : 'lg:justify-around'}`}>
+        content.push(<div key={i} className={`w-full items-center flex flex-col md:flex-row md:mx-10 ${ Math.ceil(data.length / 2) % 2 === 0 ? 'lg:absolute lg:flex-col lg:top-80 lg:mt-12' : 'lg:justify-around'}`}>
             {i%2 === 0 ? <>
                     <span className={`w-4/5 md:w-3/6 lg:w-2/6 xl:w-1/4 md:mx-10 inline-block animate__animated animate__slow ${(number % 3 === 0) ? 'animate__fadeInLeft' : (number % 3 === 1) ? 'animate__fadeInRight' : (window.innerWidth > 1024 ) ? 'animate__fadeInUp' : 'animate__fadeInLeft'}`}>
                         <label className="text-xl md:text-2xl">{data[number].Title}</label>

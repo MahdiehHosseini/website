@@ -28,7 +28,7 @@ function App() {
           <Routes>
             <Route path='/' element={<HomePage />} />
             <Route path='/aboutme' element={<AboutMe />} />
-            <Route path='/skills' element={<Skills data={[{Title: '1', Percent: 96},{Title: '2', Percent: 50},{Title: '3', Percent: 96},{Title: '4', Percent: 50},{Title: '5', Percent: 96},{Title: '6', Percent: 50}]} />} />
+            <Route path='/skills' element={<Skills data={[{Title: '.Net', Percent: 96},{Title: 'C#', Percent: 50},{Title: 'Database', Percent: 96},{Title: 'SQL', Percent: 50},{Title: 'Golang', Percent: 96},{Title: 'PHP', Percent: 50}]} />} />
             <Route path='/portfolio' element={<Portfolio data={[{Title: 'home', ImageName: '/src/assets/portfolio-images/image.jpg', Address: '#'},{Title: 'home', ImageName: '/src/assets/portfolio-images/image.jpg', Address: '#'},{Title: 'home', ImageName: '/src/assets/portfolio-images/image.jpg', Address: '#'}]}/>} />
             <Route path='/contact' element={<Contact />} />
           </Routes>

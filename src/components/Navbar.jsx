@@ -4,7 +4,7 @@ import { Link } from "react-router-dom"
 import { useSelector,useDispatch } from 'react-redux'
 // components
 const Music = lazy(() => import('./Music'))
-import { FaClipboardList, FaClone, FaEnvelope, FaMoon, FaSun, FaUser } from 'react-icons/fa'
+import { FaClipboardList, FaClone, FaEnvelope, FaHome, FaMoon, FaSun, FaUser } from 'react-icons/fa'
 // store 
 import {toggleLang, toggleMode} from './../store/slice/toggleSlice'
 
@@ -29,7 +29,7 @@ function Navbar({navVisablity}){
 
             <div className={`${!showNav && 'hidden'} flex h-screen w-full md:border-l border-${them.subBorderColor} md:flex md:mt-28 md:right-0 absolute md:w-1/6 flex-col justify-around md:bg-inherit py-52 md:p-5 md:h-4/6 items-center bg-${them.mainBgColor}/70`}>
                 <Link to="/">
-                    <FaUser onClick={()=>setShowNav(false)} className="curesor-pointer text-4xl"></FaUser>
+                    <FaHome onClick={()=>setShowNav(false)} className="curesor-pointer text-4xl" />
                 </Link>
                 <Link to="/aboutme">
                     <FaUser onClick={() => setShowNav(false)} className="text-4xl" />
